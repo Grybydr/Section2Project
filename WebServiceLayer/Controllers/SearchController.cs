@@ -61,6 +61,7 @@ namespace WebServiceLayer.Controllers
 
                     post = repository.GetAPost(words.First().Contentid);
                     post.rankPoint = rankPoint;
+                   
                     ContainingPosts.Add(post);
                 }
             }
@@ -118,6 +119,7 @@ namespace WebServiceLayer.Controllers
         [HttpGet]
         public IHttpActionResult Search(string statement, int page = 0, int pagesize = Util.Util.Config.DefaultPageSize)
         {
+            statement = statement.Replace("%20", " ");
             var list = RankPosts(statement, pagesize, page * pagesize).Select(p => ModelFactory.Map(p, Url));
             //var result = GetResultWithPaging(list, pagesize, page, total, route);
             var result = GetResultWithPaging(
@@ -129,7 +131,9 @@ namespace WebServiceLayer.Controllers
 
             if (result == null)
                 return NotFound();
-
+            
+            this.repository.AddToHistory(new History(statement));
+             
             return Ok(result);
         }
     }

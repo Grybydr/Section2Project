@@ -170,9 +170,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\one-page-wonder.css" />
+    <Content Include="css\theme.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.15.0-build58334.js" />
-    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="index.html" />
+    <Content Include="scripts\app\components\comments\comments.html" />
+    <Content Include="scripts\app\components\comments\commentsViewmodel.js" />
+    <Content Include="scripts\app\components\histories\histories.html" />
+    <Content Include="scripts\app\components\histories\historiesViewmodel.js" />
+    <Content Include="scripts\app\components\marks\marks.html" />
+    <Content Include="scripts\app\components\marks\marksViewmodel.js" />
+    <Content Include="scripts\app\components\menu\menu.html" />
+    <Content Include="scripts\app\components\menu\menuViewmodel.js" />
+    <Content Include="scripts\app\components\posts\posts.html" />
+    <Content Include="scripts\app\components\posts\postsViewmodel.js" />
+    <Content Include="scripts\app\components\relatedpost\relatedpost.html" />
+    <Content Include="scripts\app\components\relatedpost\relatedpostViewmodel.js" />
+    <Content Include="scripts\app\components\users\users.html" />
+    <Content Include="scripts\app\components\users\usersViewmodel.js" />
+    <Content Include="scripts\app\config.js" />
+    <Content Include="scripts\app\dataservice.js" />
+    <Content Include="scripts\lib\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\lib\ai.0.15.0-build58334.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="scripts\lib\jquery-2.2.3.intellisense.js" />
+    <Content Include="scripts\lib\bootstrap.js" />
+    <Content Include="scripts\lib\bootstrap.min.js" />
+    <Content Include="scripts\lib\jquery-2.2.3.js" />
+    <Content Include="scripts\lib\jquery-2.2.3.min.js" />
+    <Content Include="scripts\lib\knockout-3.4.0.debug.js" />
+    <Content Include="scripts\lib\knockout-3.4.0.js" />
+    <Content Include="scripts\lib\r.js" />
+    <Content Include="scripts\lib\require.js" />
+    <Content Include="scripts\lib\text.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\app\viewmodel.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -207,6 +254,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="scripts\lib\jquery-2.2.3.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

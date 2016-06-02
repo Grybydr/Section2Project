@@ -16,7 +16,7 @@ namespace WebServiceLayer.Util
             public const string MarksRoute = "MarkApi";
             public const string UsersRoute = "UserApi";
 
-            public const int DefaultPageSize = 10;
+            public const int DefaultPageSize = 30;
         }
     }
 }

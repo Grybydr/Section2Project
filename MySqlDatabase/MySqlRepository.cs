@@ -82,6 +82,15 @@ namespace MySqlDatabase
 
 
         // Mark Methods
+        public Mark GetAMark(int markId)
+        {
+            using (var db = new SovaContext())
+            {
+                return db.Marks.Where(m => m.Id == markId).First();
+
+            }
+        }
+
         public void Mark(Mark mark)
         {
             using (var db = new SovaContext())
@@ -207,7 +216,10 @@ namespace MySqlDatabase
         {
             using (var db = new SovaContext())
             {
-                return db.Posts.Where(p => p.Id == postId).First();
+                var post =  db.Posts.Where(p => p.Id == postId).First();
+                //post.Comments = GetCommentsOfAPost(postId);
+                return post;
+
 
             }
         }

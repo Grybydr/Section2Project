@@ -42,7 +42,7 @@ namespace WebServiceLayer.Models
         }
 
 
-        public static SearchModel Map(Search post, UrlHelper urlHelper, int id = 0)
+        public static SearchModel Map(Search post, UrlHelper urlHelper)
         {
             if (post == null) return null;
 

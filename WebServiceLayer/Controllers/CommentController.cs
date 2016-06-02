@@ -11,7 +11,6 @@ using DomainModel;
 using MySqlDatabase;
 using WebServiceLayer.Models;
 using WebServiceLayer.Controllers;
-using WebServiceLayer.Models;
 using WebServiceLayer.Util;
 
 namespace WebServiceLayer.Controllers

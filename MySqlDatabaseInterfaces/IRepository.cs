@@ -23,6 +23,7 @@ namespace DataAccessLayer
         void Mark(Mark mark);
         void Unmark(int id);
         void DeleteAllMarks();
+        Mark GetAMark(int markId);
 
         Post GetAPost(int postId);
         List<Post> GetAllRelatedPosts(int postId);

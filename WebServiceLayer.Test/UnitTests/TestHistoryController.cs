@@ -13,8 +13,6 @@ using NUnit.Framework;
 using WebServiceLayer.Controllers;
 using WebServiceLayer.Models;
 using WebServiceLayer;
-using WebServiceLayer.Controllers;
-using WebServiceLayer.Models;
 using WebServiceLayer.Util;
 using Assert = NUnit.Framework.Assert;
 

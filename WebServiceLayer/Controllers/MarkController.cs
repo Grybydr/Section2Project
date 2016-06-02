@@ -40,6 +40,17 @@ namespace WebServiceLayer.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        public IHttpActionResult GetAMark(int markId)
+        {
+            var markModel = ModelFactory.Map(_repository.GetAMark(markId), Url);
+
+            if (markModel == null)
+            {
+                return NotFound();
+            }
+            return Ok(markModel);
+        }
 
         [HttpPost]
         public IHttpActionResult MarkAPost(Mark mark)
